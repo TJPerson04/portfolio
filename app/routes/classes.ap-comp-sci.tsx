@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderAPCompSci } from "~/texts/classes/ap-comp-sci";
 

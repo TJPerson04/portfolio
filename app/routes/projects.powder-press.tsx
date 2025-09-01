@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderPowderPress } from "~/texts/projects/powder-press";
 

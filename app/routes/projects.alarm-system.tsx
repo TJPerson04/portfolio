@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderAlarmSystem } from "~/texts/projects/alarm-system";
 

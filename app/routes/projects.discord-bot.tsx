@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderDiscordBot } from "~/texts/projects/discord-bot";
 

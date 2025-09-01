@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import {renderWebsiteDesc} from "~/texts/projects/this-website";
 

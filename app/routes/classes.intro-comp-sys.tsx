@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderIntroCompSys } from "~/texts/classes/intro-comp-sys";
 

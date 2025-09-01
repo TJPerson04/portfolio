@@ -3,11 +3,16 @@ export function renderWebsiteDesc() {
     <div className="website-desc">
       <p>
         This website is built in typescript using the{" "}
-        <a style={{ color: "#8b76d6" }} href="https://react.dev/">
+        <a className="link" href="https://react.dev/">
           Reactjs
         </a>{" "}
         framework. I am hosting this website on{" "}
-        <span style={{ color: "#8b76d6" }}>__CHANGE_ME__</span>.
+        <span className="link">__CHANGE_ME__</span>. All of the source code can
+        be found on my{" "}
+        <a className="link" href="https://github.com/TJPerson04/portfolio">
+          GitHub
+        </a>
+        .
       </p>
       <p>
         I began making this website as a side project in the spring of 2025. I

@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderMCBlackjack } from "~/texts/projects/mc-blackjack";
 

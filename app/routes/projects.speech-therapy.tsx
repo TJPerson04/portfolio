@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderSpeechTherapy } from "~/texts/projects/speech-therapy";
 

@@ -1,17 +1,18 @@
 import { Col, Image, Row } from "antd";
+import { ReactNode } from "react";
 
 interface ProjectPageTemplateProps {
   title: string;
   thumbnailURL?: string | undefined;
   demoVideoURL?: string | undefined;
-  description: () => any;
+  description: () => ReactNode;
 }
 
 const ProjectPageTemplate: React.FC<ProjectPageTemplateProps> = ({
   title,
   thumbnailURL,
   demoVideoURL = undefined,
-  description = undefined,
+  description,
 }) => {
   return (
     <div className={`Project-${title} h-screen justify-center`}>

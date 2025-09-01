@@ -1,86 +1,91 @@
 .collapsableNavTitle {
-    width: 10vw;
-    height: 5vh;
-    background-color: #8b76d6;
-    display: grid;
-    justify-content: center;
-    border: 2px solid #8b76d6;
-    border-radius: 10px;
-    cursor: pointer;
+  width: 10vw;
+  height: 5vh;
+  background-color: #8b76d6;
+  display: grid;
+  justify-content: center;
+  border: 2px solid #8b76d6;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* LINE */
 .collapsableNavConnectorLineClosed {
-    width: 2px;
-    height: 0px;
-    margin: 0px;
-    background-color: #8b76d6;
-    justify-self: center;
+  width: 2px;
+  height: 0px;
+  margin: 0px;
+  background-color: #8b76d6;
+  justify-self: center;
 
-    transition-property: all;
-    transition-delay: 1000ms;
-    transition-duration: 1000ms;
-    transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-delay: 1000ms;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
 }
 
 .collapsableNavConnectorLineOpen {
-    width: 2px;
-    height: 20px;
-    margin: 0px;
-    background-color: #8b76d6;
-    justify-self: center;
+  width: 2px;
+  height: 20px;
+  margin: 0px;
+  background-color: #8b76d6;
+  justify-self: center;
 
-    transition-property: all;
-    transition-duration: 1000ms;
-    transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
 }
 
 /* BORDER */
 .collapsableNavBorderClosed {
-    width: 13vw;
-    height: 15vh;
-    border: 2px solid black;
-    display: grid;
-    border-radius: 10px;
-    justify-self: center;
-    /* border-image: linear-gradient(to bottom, #8b76d6 0%, black 100%); */
-    
-    transition-property: all;
-    transition-duration: 4000ms;
-    transition-timing-function: ease-in-out;
+  width: 13vw;
+  height: 15vh;
+  border: 2px solid black;
+  display: grid;
+  border-radius: 10px;
+  justify-self: center;
+  /* border-image: linear-gradient(to bottom, #8b76d6 0%, black 100%); */
+
+  transition-property: all;
+  transition-duration: 4000ms;
+  transition-timing-function: ease-in-out;
 }
 
 .collapsableNavBorderClosed > p {
-    display: none;
-    opacity: 0;
-    justify-self: center;
+  display: none;
+  opacity: 0;
+  justify-self: center;
 
-    transition-property: all;
-    transition-delay: 6000ms;
-    transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-delay: 6000ms;
+  transition-timing-function: ease-in-out;
 }
 
 .collapsableNavBorderOpen {
-    width: 13vw;
-    height: 15vh;
-    border: 2px solid #8b76d6;
-    display: grid;
-    border-radius: 10px;
-    justify-self: center;
-    /* border-image: linear-gradient(to bottom, #8b76d6 100%, black 0%) 1; */
+  width: 13vw;
+  height: 15vh;
+  border: 2px solid #8b76d6;
+  display: grid;
+  border-radius: 10px;
+  justify-self: center;
+  /* border-image: linear-gradient(to bottom, #8b76d6 100%, black 0%) 1; */
 
-    transition-property: all;
-    transition-delay: 1000ms;
-    transition-duration: 5000ms;
-    transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-delay: 1000ms;
+  transition-duration: 5000ms;
+  transition-timing-function: ease-in-out;
 }
 
 .collapsableNavBorderOpen > p {
-    display: grid;
-    opacity: 100;
-    justify-self: center;
+  display: grid;
+  opacity: 100;
+  justify-self: center;
 
-    transition-property: all;
-    transition-delay: 6000ms;
-    transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-delay: 6000ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* LINKS */
+.link {
+  color: #8b76d6;
 }

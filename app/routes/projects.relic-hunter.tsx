@@ -1,3 +1,4 @@
+import "~/index.css";
 import ProjectPageTemplate from "~/templates/ProjectPageTemplate";
 import { renderRelicHunter } from "~/texts/projects/relic-hunter";
 
