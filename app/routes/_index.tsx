@@ -9,6 +9,7 @@ import {
   MergeOutlined,
 } from "@ant-design/icons";
 import { useState } from "react";
+import NewList from "~/components/NewList";
 
 export const meta: MetaFunction = () => {
   return [
@@ -32,49 +33,93 @@ export default function Index() {
     {
       title: "This Website",
       description:
-        "The website you're looking at right now was built entirely be me.",
-      link: "/this-website",
+        "The website you're on right now, made to show off my various projects.",
+      link: "/projects/this-website",
     },
-    { title: "Relic Hunter", description: "Test desc", link: "/relic-hunter" },
+    {
+      title: "Relic Hunter",
+      description:
+        "An interactive museum exhibit displaying a variety of relics.",
+      link: "/projects/relic-hunter",
+    },
     {
       title: "Speech Therapy Website",
-      description: "Test desc",
-      link: "/speech-website",
+      description:
+        "A website that is meant to be used in conjunction with a speech therapist for voice training.",
+      link: "/projects/speech-therapy",
     }, // TruVox
     {
       title: "Lusso Cosmetics Website",
-      description: "Test desc",
-      link: "/lusso-website",
+      description:
+        "A website made for a local cosmetics company in my hometown.",
+      link: "/projects/lusso-cosmetics-web",
     },
     {
       title: "Cosmetics Powder Press Machine",
-      description: "Test desc",
-      link: "/powder-press",
+      description:
+        "A machine that semi-automates the pressing of various cosmetic powders.",
+      link: "/projects/powder-press",
     },
     {
       title: "Church Bell Chime System",
-      description: "Test desc",
-      link: "/bell-chime",
+      description:
+        "A system that rings the bells of a church at given times of the day.",
+      link: "/projects/bell-system",
     },
     {
       title: "Museum Alarm System",
-      description: "Test desc",
-      link: "/museuam-alarm",
+      description: "A security measure to protect various exhibits from theft.",
+      link: "/projects/alarm-system",
     },
     {
       title: "Discord Music Bot",
-      description: "Test desc",
-      link: "/discord-bot",
+      description:
+        "A bot for the app Discord, made to play music in voice channels.",
+      link: "/projects/discord-bot",
     },
-    { title: "ENED Robots", description: "Test desc", link: "/ened-robot" },
+    {
+      title: "ENED Robots",
+      description:
+        "Two robots made out of legos, each designed to do various tasks simultating real world applications.",
+      link: "/projects/ened-robots",
+    },
+    {
+      title: "Blackjack in Minecraft",
+      description: "The card game Blackjack within the video game Minecraft.",
+      link: "/projects/mc-blackjack",
+    },
   ];
 
   const classesData = [
-    { title: "Data Structures", description: "Test desc" },
-    { title: "Intro Computer Systems", description: "Test desc" },
-    { title: "Electronic Engineering Classes", description: "Test desc" },
-    { title: "AP Computer Science Principles", description: "Test desc" },
-    { title: "Hy-Tech Club", description: "Test desc" },
+    {
+      title: "Data Structures",
+      description:
+        "The various ways that data is stored within computers, along with their pros and cons.",
+      link: "/classes/data-structs",
+    },
+    {
+      title: "Intro Computer Systems",
+      description:
+        "An overview of how code is run on computers, starting with high level C code and moving all the way down to the transistors.",
+      link: "/classes/intro-comp-sys",
+    },
+    {
+      title: "Electronic Engineering Classes",
+      description:
+        "A series of hand-on classes where I learned about various components and how they work, while also building real circuits with those components.",
+      link: "/classes/elec-eng",
+    },
+    {
+      title: "AP Computer Science Principles",
+      description: "An early introduction to coding principles using Python.",
+      link: "/classes/ap-comp-sci",
+    },
+    {
+      title: "Hy-Tech Club",
+      description:
+        "An early introduction to other coding languages, such as HTML and JavaScript.",
+      link: "/classes/hy-tech-club",
+    },
   ];
 
   const onClickContent: MenuProps["onClick"] = (e) => {
@@ -89,45 +134,12 @@ export default function Index() {
 
     // List of my projects
     else if (content === "projects") {
-      return (
-        <div
-          style={{
-            marginTop: "0px",
-            width: "75%",
-            borderRadius: "20px",
-            borderWidth: "4px",
-            borderColor: "#8b76d6",
-            paddingLeft: "17px",
-            paddingTop: "7px",
-            paddingBottom: "10px",
-            background: "white",
-          }}
-        >
-          <List
-            pagination={{ position: "bottom", align: "center", pageSize: 5 }}
-            itemLayout="horizontal"
-            dataSource={projectsData}
-            renderItem={(item, index) => (
-              <List.Item>
-                <List.Item.Meta
-                  avatar={<InfoCircleOutlined />}
-                  title={<a href={item.link}>{item.title}</a>}
-                  description={item.description}
-                />
-              </List.Item>
-            )}
-          />
-        </div>
-      );
+      return <NewList dataSource={projectsData} />;
     }
 
     // List of relevant classes I've taken
     else if (content === "classes") {
-      return (
-        <div>
-          <p>Classes</p>
-        </div>
-      );
+      return <NewList dataSource={classesData} />;
     }
 
     // Just in case ig
