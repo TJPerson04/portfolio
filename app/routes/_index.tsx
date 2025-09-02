@@ -104,6 +104,11 @@ export default function Index() {
       link: "/classes/intro-comp-sys",
     },
     {
+      title: "Python Programming",
+      description: "A more in-depth look at the Python programming langauge.",
+      link: "/classes/python-programming",
+    },
+    {
       title: "Electronic Engineering Classes",
       description:
         "A series of hand-on classes where I learned about various components and how they work, while also building real circuits with those components.",
