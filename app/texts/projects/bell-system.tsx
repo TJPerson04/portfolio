@@ -17,7 +17,10 @@ export function renderBellSystem() {
         connected to the church's sound system and created a program to play the
         bell ringing sound at given times of the day, every day, with the bell
         ringing a different amount of times depending on the time (9 times at
-        9am, 3 times at 3pm, etc.). As an additional measure, I wrote a script
+        9am, 3 times at 3pm, etc.). As an additional measure, I created a{" "}
+        <a className="link" href="https://en.wikipedia.org/wiki/Cron">
+          cron job
+        </a>{" "}
         so this Raspberry Pi will restart every night and automatically update
         its code, so that it can easily be updated or changed without having to
         actually interact with the{" "}
