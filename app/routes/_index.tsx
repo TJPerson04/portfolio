@@ -134,7 +134,7 @@ export default function Index() {
   const renderContent = (content: string) => {
     // Main page, overview of me
     if (content === "overview") {
-      return <p>It's ya boy</p>;
+      return <p>I am currently in my third year studying computer science at the University of Cincinnati. Feel free to explore this website and learn more about my experience!</p>;
     }
 
     // List of my projects
@@ -147,7 +147,7 @@ export default function Index() {
       return <NewList dataSource={classesData} />;
     }
 
-    // Just in case ig
+    // Just in case
     else {
       return (
         <div>
