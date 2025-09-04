@@ -6,8 +6,8 @@ export function renderWebsiteDesc() {
         <a className="link" href="https://react.dev/">
           Reactjs
         </a>{" "}
-        framework. I am hosting this website on{" "}
-        <span className="link">__CHANGE_ME__</span>. All of the source code can
+        framework. I am hosting this website on a virtual machine through{" "}
+        <a className="link" href="https://fly.io/">fly.io</a>. All of the source code can
         be found on my{" "}
         <a className="link" href="https://github.com/TJPerson04/portfolio">
           GitHub

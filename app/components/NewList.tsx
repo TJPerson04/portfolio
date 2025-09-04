@@ -1,10 +1,11 @@
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { List } from "antd";
+import "../index.css";
 
 interface DataObj {
-    link: string;
-    title: string;
-    description: string;
+  link: string;
+  title: string;
+  description: string;
 }
 
 interface NewListProps {
@@ -23,19 +24,36 @@ const NewList: React.FC<NewListProps> = ({ dataSource }) => {
         paddingLeft: "17px",
         paddingTop: "7px",
         paddingBottom: "10px",
-        background: "white",
+        background: "black",
       }}
     >
       <List
-        pagination={{ position: "bottom", align: "center", pageSize: 5 }}
+        pagination={{
+          position: "bottom",
+          align: "center",
+          pageSize: 5,
+        }}
         itemLayout="horizontal"
         dataSource={dataSource}
         renderItem={(item, index) => (
-          <List.Item>
+          <List.Item style={{ borderBottomColor: "rgb(212, 212, 212, 0.35)" }}>
             <List.Item.Meta
               avatar={<InfoCircleOutlined />}
-              title={<a href={item.link}>{item.title}</a>}
-              description={item.description}
+              title={
+                <a className="new-list-title" href={item.link}>
+                  {item.title}
+                </a>
+              }
+              description={
+                <span
+                  style={{
+                    fontFamily: "Inconsolata, monospace",
+                    color: "#d5d2d5",
+                  }}
+                >
+                  {item.description}
+                </span>
+              }
             />
           </List.Item>
         )}

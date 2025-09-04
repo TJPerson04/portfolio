@@ -134,7 +134,29 @@ export default function Index() {
   const renderContent = (content: string) => {
     // Main page, overview of me
     if (content === "overview") {
-      return <p>I am currently in my third year studying computer science at the University of Cincinnati. Feel free to explore this website and learn more about my experience!</p>;
+      return (
+        <div
+          style={{
+            color: "white",
+            marginLeft: "50px",
+            marginRight: "50px",
+            padding: "30px",
+            textAlign: "justify",
+            border: "3px solid transparent",
+            borderRadius: "20px",
+            whiteSpace: "pre-line",
+            fontSize: "large",
+            fontFamily: "Inconsolata, monospace",
+          }}
+          className="leading text-gray-800 dark:text-gray-100 flex justify-center"
+        >
+          <p>
+            I am currently in my third year studying computer science at the
+            University of Cincinnati. Feel free to explore this website and
+            learn more about my experience!
+          </p>
+        </div>
+      );
     }
 
     // List of my projects
@@ -172,6 +194,7 @@ export default function Index() {
               width: "100%",
               height: "100%",
               background: "transparent",
+              fontFamily: "Inconsolata, monospace",
             }}
           />
         </Col>
@@ -180,10 +203,13 @@ export default function Index() {
             <Row>
               <Col span={24}>
                 <h1
-                  className="leading text-2xl font-bold text-gray-800 dark:text-gray-100 flex justify-center"
+                  className="leading text-3xl font-bold text-gray-800 dark:text-gray-100 flex justify-center"
                   style={{
-                    marginTop: "10px",
-                    marginBottom: "10px",
+                    marginTop: "40px",
+                    marginBottom: "40px",
+                    fontFamily: "Inconsolata, monospace",
+                    fontSize: "2.5em",
+                    fontWeight: "bold",
                   }}
                 >
                   The Portfolio of Tyler DiLoreto

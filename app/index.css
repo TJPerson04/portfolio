@@ -89,3 +89,50 @@
 .link {
   color: #8b76d6;
 }
+
+/* NEW LIST TITLE */
+.new-list-title {
+  font-family: Inconsolata, monospace !important;
+  color: white !important;
+}
+
+.new-list-title:hover {
+  color: #8b76d6 !important;
+}
+
+/* HACKY WAY OF FIXING LIST PAGINATION STYLE */
+/* Arrows */
+.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+  color: white !important;
+}
+
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link {
+  color: white !important;
+}
+
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
+  color: rgb(212, 212, 212, 0.6) !important;
+}
+
+.ant-pagination .ant-pagination-item a {
+  color: white !important;
+}
+
+.ant-pagination .ant-pagination-item a:hover {
+  color: #8b76d6 !important;
+}
+
+.ant-pagination .ant-pagination-item {
+  background: black !important;
+  font-family: Inconsolata, monospace !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #8b76d6 !important;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  border: 1px solid #8b76d6 !important;
+  background: black !important;
+  font-family: Inconsolata, monospace !important;
+}
