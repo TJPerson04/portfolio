@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for portfolio-pa-sgq on 2025-09-03T21:56:49Z
+# fly.toml app configuration file generated for tyler-diloreto-portfolio on 2025-09-04T17:00:28Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'portfolio-pa-sgq'
+app = 'tyler-diloreto-portfolio'
 primary_region = 'ord'
 
 [build]
