@@ -13,8 +13,11 @@ import NewList from "~/components/NewList";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Tyler DiLoreto's Portfolio" },
+    {
+      name: "Tyler DiLoreto's Portfolio",
+      content: "Welcome to the portfolio of Tyler DiLoreto!",
+    },
   ];
 };
 
@@ -49,16 +52,16 @@ export default function Index() {
       link: "/projects/speech-therapy",
     }, // TruVox
     {
-      title: "Lusso Cosmetics Website",
-      description:
-        "A website made for a local cosmetics company in my hometown.",
-      link: "/projects/lusso-cosmetics-web",
-    },
-    {
       title: "Cosmetics Powder Press Machine",
       description:
         "A machine that semi-automates the pressing of various cosmetic powders.",
       link: "/projects/powder-press",
+    },
+    {
+      title: "Discord Music Bot",
+      description:
+        "A bot for the app Discord, made to play music in voice channels.",
+      link: "/projects/discord-bot",
     },
     {
       title: "Church Bell Chime System",
@@ -72,10 +75,10 @@ export default function Index() {
       link: "/projects/alarm-system",
     },
     {
-      title: "Discord Music Bot",
+      title: "Lusso Cosmetics Website",
       description:
-        "A bot for the app Discord, made to play music in voice channels.",
-      link: "/projects/discord-bot",
+        "A website made for a local cosmetics company in my hometown.",
+      link: "/projects/lusso-cosmetics-web",
     },
     {
       title: "ENED Robots",
