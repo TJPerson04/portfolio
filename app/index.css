@@ -136,3 +136,9 @@
   background: black !important;
   font-family: Inconsolata, monospace !important;
 }
+
+
+/* HACKY WAY OF CHANGING COLOR OF SELECTED MENU ITEM */
+.ant-menu-item-selected {
+  background-color: #8b76d6 !important;
+}
