@@ -90,6 +90,11 @@
   color: #8b76d6;
 }
 
+.link:hover {
+  cursor: pointer;
+  color: #69b1ff;
+}
+
 /* NEW LIST TITLE */
 .new-list-title {
   font-family: Inconsolata, monospace !important;

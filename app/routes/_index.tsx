@@ -134,6 +134,14 @@ export default function Index() {
     setSection(e.key);
   };
 
+  const switchToClasses = () => {
+    setSection("classes");
+  }
+
+  const switchToProjects = () => {
+    setSection("projects");
+  }
+
   const renderContent = (content: string) => {
     // Main page, overview of me
     if (content === "overview") {
@@ -154,9 +162,15 @@ export default function Index() {
           className="leading text-gray-800 dark:text-gray-100 flex justify-center"
         >
           <p>
-            I am currently in my third year studying computer science at the
-            University of Cincinnati. Feel free to explore this website and
-            learn more about my experience!
+            I am currently a student at the University of Cincinnati. I am simultaneously
+            pursuing a Bachelor's and Master's degree in Computer Science, a subject that
+            I've been interested in ever since I programmed Battleship into my TI-84 calculator 
+            in middle school. If you want to learn more about what classes I've taken so far you
+            can check them out in the <span className="link" onClick={switchToClasses}>classes</span> tab. 
+          {"\n\n"}
+            Aside from school I always have some project going, so I figured I would make this 
+            website to showcase all of those <span className="link" onClick={switchToProjects}>projects</span>. Feel free to explore around 
+            and learn more about my experience!
           </p>
         </div>
       );
@@ -189,6 +203,7 @@ export default function Index() {
           <Menu
             onClick={onClickContent}
             defaultSelectedKeys={["overview"]}
+            selectedKeys={[section]}
             mode="vertical"
             theme="dark"
             items={items}
