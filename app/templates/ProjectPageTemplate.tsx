@@ -34,8 +34,12 @@ const ProjectPageTemplate: React.FC<ProjectPageTemplateProps> = ({
       </Row>
 
       {thumbnailURL && <Image src={thumbnailURL} />}
-
-      {demoVideoURL && <iframe src={demoVideoURL} />}
+      
+      <Row>
+        <Col span={24}>
+          {demoVideoURL && <iframe src={demoVideoURL} />}
+        </Col>
+      </Row>
 
       <Row>
         <Col span={24}>

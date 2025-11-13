@@ -1,4 +1,4 @@
-export function renderWebsiteDesc() {
+export function renderWebsiteDesc(setIsPopUpOpen: (e: boolean) => void) {
   return (
     <div className="website-desc">
       <p>
@@ -26,6 +26,10 @@ export function renderWebsiteDesc() {
         belt. Also as my skills grow I plan on continuing to improve to overall
         look and feel of this website, which is something I think is very
         important when it comes to the user experience.
+      </p>
+      <p>
+        If you want to get really trippy, <span className="link" onClick={() => setIsPopUpOpen(true)}>here's</span> 
+        {" "}a demo of this website.
       </p>
     </div>
   );
