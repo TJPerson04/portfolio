@@ -23,7 +23,7 @@ export function renderWebsiteDesc(setIsPopUpOpen: (e: boolean) => void) {
       <p>
         This website is continually in development. I will continue to add to it
         as my portfolio grows and I have more projects and classes under my
-        belt. Also as my skills grow I plan on continuing to improve to overall
+        belt. Also as my skills grow I plan on continuing to improve the overall
         look and feel of this website, which is something I think is very
         important when it comes to the user experience.
       </p>
