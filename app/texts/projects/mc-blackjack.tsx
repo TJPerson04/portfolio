@@ -30,6 +30,15 @@ export function renderMCBlackjack() {
         </a>
         .
       </p>
+      <p>
+        This was particularly interesting because it was my first experience creating
+        a custom display. Since these computers only allow you to choose the color of
+        a given square, I had to create my own functionality to create custom shapes. I
+        did this by creating encoded constants for each reoccuring shape (the suit shapes,
+        the back of a card, the numbers/letters on a card), then creating a function to
+        decode these constants, using them to print a series of pixels to the screen at a 
+        specific spot.
+      </p>
     </div>
   );
 }
