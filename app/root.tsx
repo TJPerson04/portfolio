@@ -1,6 +1,7 @@
 import {
   Links,
   Meta,
+  MetaFunction,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -8,6 +9,16 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Tyler DiLoreto's Portfolio" },
+    {
+      name: "Tyler DiLoreto's Portfolio",
+      content: "Welcome to the portfolio of Tyler DiLoreto!",
+    },
+  ];
+};
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },

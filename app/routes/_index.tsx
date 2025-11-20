@@ -11,16 +11,6 @@ import {
 import { useState } from "react";
 import NewList from "~/components/NewList";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Tyler DiLoreto's Portfolio" },
-    {
-      name: "Tyler DiLoreto's Portfolio",
-      content: "Welcome to the portfolio of Tyler DiLoreto!",
-    },
-  ];
-};
-
 export default function Index() {
   const [section, setSection] = useState<string>("overview");
 
