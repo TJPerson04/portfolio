@@ -40,6 +40,12 @@ export default function Index() {
       link: "/projects/this-website",
     },
     {
+      title: "Cipher Decoder",
+      description: 
+        "A program to automatically decode text encoded by a vigenere cipher, without the key.",
+      link: "/projects/cipher-decoder"
+    },
+    {
       title: "Relic Hunter",
       description:
         "An interactive museum exhibit displaying a variety of relics.",
