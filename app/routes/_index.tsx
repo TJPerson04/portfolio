@@ -31,7 +31,7 @@ export default function Index() {
     },
     {
       title: "Cipher Decoder",
-      description: 
+      description:
         "A program to automatically decode text encoded by a vigenere cipher, without the key.",
       link: "/projects/cipher-decoder"
     },
@@ -97,6 +97,11 @@ export default function Index() {
       link: "/classes/data-structs",
     },
     {
+      title: "Operating Systems",
+      description: "The inner-workings of operating systems and computer processes.",
+      link: "/classes/operating-systems",
+    },
+    {
       title: "Intro Computer Systems",
       description:
         "An overview of how code is run on computers, starting with high level C code and moving all the way down to the transistors.",
@@ -158,14 +163,14 @@ export default function Index() {
           className="leading text-gray-800 dark:text-gray-100 flex justify-center"
         >
           <p>
-            I am currently a student at the University of Cincinnati. I am simultaneously
-            pursuing a Bachelor's and Master's degree in Computer Science, a subject that
-            I've been interested in ever since I programmed Battleship into my TI-84 calculator 
+            I am currently a student at the University of Cincinnati. I am
+            pursuing a Bachelor's degree in Computer Engineering with a minor in Computer Science, two subjects that
+            I've been interested in ever since I programmed Battleship into my TI-84 calculator
             in middle school. If you want to learn more about what classes I've taken so far you
-            can check them out in the <span className="link" onClick={switchToClasses}>classes</span> tab. 
-          {"\n\n"}
-            Aside from school I always have some project going, so I figured I would make this 
-            website to showcase all of those <span className="link" onClick={switchToProjects}>projects</span>. Feel free to explore around 
+            can check them out in the <span className="link" onClick={switchToClasses}>classes</span> tab.
+            {"\n\n"}
+            Aside from school I always have some project going, so I figured I would make this
+            website to showcase all of those <span className="link" onClick={switchToProjects}>projects</span>. Feel free to explore around
             and learn more about my experience!
           </p>
         </div>
